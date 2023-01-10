@@ -1,0 +1,127 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+@import "./fonts.scss";
+@import "./media.scss";
+
+* {
+  // border: 1px solid red;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: $ff-base, Roboto, "Helvetica Neue", sans-serif;
+  font-size: $fs-base + px;
+  color: $c-light-grey;
+  background-color: $c-white;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.button {
+  min-width: 200px;
+  height: 60px;
+  background: $c-dark-red;
+  border: none;
+  cursor: pointer;
+  color: $c-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $ff-poppins;
+  font-weight: 700;
+  font-size: em(12);
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: opacity $t-normal;
+
+  @include media("<=tablet") {
+    height: 40px;
+    font-weight: 600;
+    font-size: em(10);
+  }
+
+  @include media("<=tablet") {
+    height: 30px;
+  }
+
+  &-black {
+    min-width: 175px;
+    background-color: $c-black;
+    height: 45px;
+
+    @include media("<=phone") {
+      min-width: 125px;
+    }
+  }
+
+  &-transparent {
+    min-width: fit-content;
+    height: auto;
+    background-color: transparent;
+    transition: color $t-normal;
+    color: $c-black;
+
+    &:hover {
+      color: $c-red;
+    }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.mat-typography p {
+  margin: 0;
+}
+
+mat-snack-bar-container {
+  --mat-mdc-snack-bar-button-color: #000000 !important;
+  --mdc-snackbar-container-color: #ffffff !important;
+  --mdc-snackbar-supporting-text-color: #ac1313 !important;
+}

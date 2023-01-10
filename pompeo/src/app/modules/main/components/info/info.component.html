@@ -1,0 +1,52 @@
+<section>
+  <div class="wrapper">
+    <div class="block">
+      <div class="rectangle">
+        <div class="vase">
+          <img src="./assets/images/info_vase_1.png" alt="vase" />
+        </div>
+      </div>
+      <!-- Animation -->
+      <div class="content" [@fadeInRight]="state">
+        <h3>{{ "main.info.h3" | translate }}</h3>
+        <p>
+          {{ "main.info.p" | translate }}
+        </p>
+        <p *ngIf="showText === true">
+          {{ "main.info.p1" | translate }}
+        </p>
+        <!-- Show text -->
+        <button
+          class="button button-transparent"
+          (click)="showText = !showText"
+        >
+          {{ "main.info.button" | translate }}
+        </button>
+      </div>
+    </div>
+    <div class="block block-reverse">
+      <div class="rectangle rectangle-reverse">
+        <div class="mugs">
+          <img src="./assets/images/info_vase_2.png" alt="vase" />
+        </div>
+      </div>
+      <!-- Animation -->
+      <div class="content" [@fadeInLeft]="state">
+        <h3>{{ "main.info.h" | translate }}</h3>
+        <p>
+          {{ "main.info.p1" | translate }}
+        </p>
+        <p *ngIf="showText1 === true">
+          {{ "main.info.p1" | translate }}
+        </p>
+        <!-- Show text -->
+        <button
+          class="button button-transparent"
+          (click)="showText1 = !showText1"
+        >
+          {{ "main.info.button" | translate }}
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

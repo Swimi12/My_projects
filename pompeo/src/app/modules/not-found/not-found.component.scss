@@ -1,0 +1,61 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins.scss";
+@import "../../../styles/media.scss";
+
+section {
+  background-image: url("../../../assets/images/404-bg.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  margin-top: 70px;
+
+  @include media("<=phone") {
+    background-image: url("../../../assets/images/banner-bg.jpg");
+    height: 400px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin-top: 20px;
+  font-family: $ff-poppins;
+  font-weight: 700;
+  font-size: em (36);
+  color: $c-black;
+  margin-bottom: 15px;
+}
+
+span {
+  font-weight: 400;
+  font-size: em(16);
+  line-height: 1;
+  color: $c-red;
+  margin-bottom: 15px;
+}
+
+.numbers {
+  font-family: $ff-poppins;
+  font-weight: 700;
+  font-size: em(300);
+  color: rgba($c-light-grey, 0.2);
+  line-height: auto;
+  margin-bottom: 30px;
+
+  @include media("<=tablet") {
+    font-size: em(250);
+  }
+
+  @include media("<=phone") {
+    font-size: em(175);
+  }
+}
+
+a {
+  min-width: 150px;
+}

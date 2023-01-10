@@ -1,0 +1,139 @@
+{
+  "header": {
+    "navigation": {
+      "about": "About",
+      "contacts": "Contacts",
+      "shop": "Shop",
+      "home": "Home"
+    },
+
+    "cart": "Сart"
+  },
+
+  "main": {
+    "banner": {
+      "h": "Unique Porcelain",
+      "h1": "Stone Collection",
+      "p": "pompeo pottery",
+      "p2": "Many routine tasks? We have a solution.",
+      "button": "shop collection"
+    },
+
+    "categories": {
+      "p": "Product Categories",
+      "h": "Porcelain",
+      "h1": "Pottery",
+      "circle": {
+        "1": "Vases",
+        "2": "Mugs",
+        "3": "Plates"
+      },
+      "title": "Hand Grafted\n Pottery since 1990",
+      "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus posuere.",
+      "title1": "We Provide\n Premium Pottery Produts",
+      "p2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus posuere."
+    },
+
+    "info": {
+      "h3": "Gold & Black Pottery",
+      "p": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore dolore aua. Ut enim ad minim veniam, quis nostrud exercitationulco laboris nisi ut aliquip ex ea commodo consequatuisaute.",
+      "h": "Orange Ceramic",
+      "p1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore dolore aua. Ut enim ad minim veniam, quis nostrud exercitationulco laboris nisi ut aliquip ex ea commodo consequatuisaute.",
+      "button": "View Details"
+    },
+
+    "collection": {
+      "subtext": "Product Categories",
+      "h3": "Porcelain Pottery",
+      "block": {
+        "text1": "Decor Plate",
+        "text2": "Mint Pottery",
+        "text3": "Set Of Potterys",
+        "text4": "Orange Ceramic",
+        "text5": "Dark Bowl",
+        "text6": "Square Pottery"
+      },
+      "a": "View All Products"
+    },
+
+    "new-collection": {
+      "subtext": "pompeo pottery",
+      "h3": "Ready to start shopping?",
+      "p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit . Suspendisse varius enim in eros elementum.",
+      "a": "New Collection"
+    },
+
+    "latest-news": {
+      "subtext": "Latest news",
+      "h": "Latest news",
+      "h1": "New updates",
+      "error_1": "This field is required",
+      "error_2": "Enter the correct characters",
+      "button": "Subscribe",
+      "p": "Sign up for our newsletter",
+      "email": "Enter your email"
+    }
+  },
+
+  "contacts": {
+    "h3": "We are on the map"
+  },
+
+  "about": {
+    "h2": "About us",
+    "info": {
+      "title": "We have worked with you since 1990",
+      "p": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti,reiciendis sequi dolores dolor quidem inventore molestias cupiditate consequatur, mollitia quo distinctio! Officiis molestias provident eos expedita odit delectus, consequatur quos vitae vel exercitationem nam nihil suscipit quidem alias omnis dolor obcaecati aperiam, fugit id veritatis iure accusantium aut. Perferendis amet ducimus iure quisquam reprehenderit voluptatum harum rem ut illo mollitia. Perspiciatis voluptates molestiae nostrum voluptate. Corrupti cum minima iste! Esse at quo deleniti voluptates debitis soluta reiciendis quibusdam a tenetur, similique aliquid iste nihil sunt aperiam natus unde, doloribus iure fugiat? Dignissimos iste ratione optio iusto provident ipsam consequatur sapiente?",
+      "title1": "Our dishes are suitable for any interiors",
+      "p1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti,reiciendis sequi dolores dolor quidem inventore molestias cupiditate consequatur, mollitia quo distinctio! Officiis molestias provident eos expedita odit delectus, consequatur quos vitae vel exercitationem nam nihil suscipit quidem alias omnis dolor obcaecati aperiam, fugit id veritatis iure accusantium aut. Perferendis amet ducimus iure quisquam reprehenderit voluptatum harum rem ut illo mollitia. Perspiciatis voluptates molestiae nostrum voluptate. Corrupti cum minima iste! Esse at quo deleniti voluptates debitis soluta reiciendis quibusdam a tenetur, similique aliquid iste nihil sunt aperiam natus unde, doloribus iure fugiat? Dignissimos iste ratione optio iusto provident ipsam consequatur sapiente?",
+      "title2": "We have a wide range of products",
+      "p2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti,reiciendis sequi dolores dolor quidem inventore molestias cupiditate consequatur, mollitia quo distinctio! Officiis molestias provident eos expedita odit delectus, consequatur quos vitae vel exercitationem nam nihil suscipit quidem alias omnis dolor obcaecati aperiam, fugit id veritatis iure accusantium aut. Perferendis amet ducimus iure quisquam reprehenderit voluptatum harum rem ut illo mollitia. Perspiciatis voluptates molestiae nostrum voluptate. Corrupti cum minima iste! Esse at quo deleniti voluptates debitis soluta reiciendis quibusdam a tenetur, similique aliquid iste nihil sunt aperiam natus unde, doloribus iure fugiat? Dignissimos iste ratione optio iusto provident ipsam consequatur sapiente?"
+    }
+  },
+
+  "404": {
+    "p": "Whoops, this page is gone",
+    "span": "So we can't share with you the good things",
+    "button": "Home"
+  },
+
+  "footer": {
+    "subtext": "I have always striven to fix beauty in wood, stone, \nglass or pottery, that has been my creed.",
+    "item": {
+      "title": "EMAIL",
+      "p": "pompeopotery@gmail.com",
+      "title1": "FIND",
+      "p1": "Central Park, Manhattan \n New York, 1101",
+      "title2": "CALL",
+      "p2": "+1 292 345 678"
+    }
+  },
+
+  "shop": {
+    "button": "Buy",
+    "price": "Price",
+    "amount": "Amount"
+  },
+
+  "product": {
+    "description": "Description",
+    "view": "View cart",
+    "a": "back"
+  },
+
+  "cart": {
+    "h3": "Cart",
+    "button": "DELETE",
+    "empty": "Cart is empty",
+    "total": "Total",
+    "deleteItem": "Delete item?",
+    "cancel": "Cancel",
+    "maxAmount": "Maximum amount is"
+  },
+
+  "snack-bar": {
+    "messeage": "Item added to cart",
+    "subscribe": "Done",
+    "action": "Close"
+  }
+}

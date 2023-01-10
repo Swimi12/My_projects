@@ -1,0 +1,130 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+@import "../../../styles/media.scss";
+
+section {
+  margin-top: 100px;
+  margin-bottom: 60px;
+
+  @include media("<=phone") {
+    padding-top: 0px;
+    margin-bottom: 60px;
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 35px;
+  @include media("<=screen") {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include media("<=tablet") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media("<=phone") {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+h2 {
+  font-weight: 500;
+  font-size: em(16);
+  line-height: 26px;
+  color: $c-light-grey;
+}
+
+.item {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  color: $c-black;
+
+  @include media("<=phone") {
+    font-size: em(20);
+  }
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 15px;
+}
+
+button {
+  height: 45px;
+  min-width: 120px;
+  max-width: 120px;
+}
+
+.card {
+  align-items: center;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid $c-grey;
+  padding-bottom: 20px;
+  border-left: 1px solid $c-grey;
+  transition: opacity $t-normal;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @include media(">=screen") {
+    &:nth-child(4n) {
+      border-right: 1px solid $c-grey;
+    }
+
+    &:last-child {
+      border-right: 1px solid $c-grey;
+    }
+  }
+
+  @include media("<=screen") {
+    &:nth-child(3n) {
+      border-right: 1px solid $c-grey;
+    }
+
+    &:last-child {
+      border-right: 1px solid $c-grey;
+    }
+  }
+
+  @include media("<=tablet") {
+    &:nth-child(2n) {
+      border-right: 1px solid $c-grey;
+    }
+
+    &:last-child {
+      border-right: 1px solid $c-grey;
+    }
+  }
+
+  @include media("<=phone") {
+    &:nth-child(1n) {
+      border-right: 1px solid $c-grey;
+    }
+
+    &:last-child {
+      border-right: 1px solid $c-grey;
+    }
+  }
+}

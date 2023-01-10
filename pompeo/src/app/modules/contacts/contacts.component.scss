@@ -1,0 +1,46 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+@import "../../../styles/media.scss";
+
+section {
+  margin-top: 100px;
+  margin-bottom: 60px;
+
+  @include media("<=phone") {
+    padding-top: 0px;
+    margin-bottom: 60px;
+  }
+}
+
+h3 {
+  font-weight: 700;
+  font-size: em(48);
+  line-height: 53px;
+  text-align: center;
+  margin-bottom: 60px;
+
+  @include media("<=phone") {
+    font-size: em(36);
+  }
+}
+
+.map {
+  margin-bottom: 30px;
+  position: relative;
+  height: 515px;
+  display: flex;
+
+  @include media("<=phone") {
+    height: 300px;
+  }
+}
+
+p {
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+
+  @include media("<=phone") {
+    font-size: em(20);
+  }
+}

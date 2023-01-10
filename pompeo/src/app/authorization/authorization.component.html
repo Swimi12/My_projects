@@ -1,0 +1,84 @@
+<section>
+  <div class="wrapper">
+    <div class="content">
+      <!-- Authorization -->
+      <form [formGroup]="form">
+        <!-- Email -->
+        <label>
+          <input
+            [type]="InputTypes.EMAIL"
+            formControlName="email"
+            placeholder="Enter email"
+            [class.valid]="isControlValid('email')"
+            [class.invalid]="isControlInvalid('email')"
+          />
+
+          <div class="error">
+            <ng-container *ngIf="isControlInvalid('email')">
+              <ng-container *ngIf="form.controls['email']?.hasError('required')"
+                >This field is required</ng-container
+              >
+              <ng-container *ngIf="form.controls['email']?.hasError('email')">
+                Enter the correct characters
+              </ng-container>
+            </ng-container>
+          </div>
+        </label>
+        <!-- Password -->
+        <label>
+          <input
+            [type]="showPassword ? InputTypes.TEXT : InputTypes.PASSWORD"
+            formControlName="password"
+            [class.valid]="isControlValid('password')"
+            [class.invalid]="isControlInvalid('password')"
+            placeholder="Enter password"
+          />
+          <button
+            type="button"
+            class="button button-eye"
+            (click)="this.showPassword = !this.showPassword"
+          >
+            <ng-container *ngIf="!this.showPassword; else elseTemplate">
+              <svg class="icon icon-eye-blocked">
+                <use xlink:href="#icon-eye-blocked"></use>
+              </svg>
+            </ng-container>
+            <ng-template #elseTemplate>
+              <svg class="icon icon-eye">
+                <use xlink:href="#icon-eye"></use>
+              </svg>
+            </ng-template>
+          </button>
+          <div class="error">
+            <ng-container *ngIf="isControlInvalid('password')">
+              <ng-container
+                *ngIf="form.controls['password']?.hasError('required')"
+                >This field is required</ng-container
+              >
+              <ng-container
+                *ngIf="form.controls['password']?.hasError('minlength')"
+                >Minimal length -
+                {{
+          form.controls['password'].errors?.['minlength']?.requiredLength}}
+                symbol</ng-container
+              >
+            </ng-container>
+          </div>
+        </label>
+        <!-- Button submit -->
+        <button
+          class="button button-black"
+          type="submit"
+          (click)="loading ? null : submit()"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="loading" *ngIf="loading === true">
+    <div class="spinner">
+      <mat-spinner></mat-spinner>
+    </div>
+  </div>
+</section>

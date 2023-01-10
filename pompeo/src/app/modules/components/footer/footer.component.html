@@ -1,0 +1,36 @@
+<footer>
+  <div class="wrapper">
+    <div class="head">
+      <!-- Logo -->
+      <app-logo></app-logo>
+      <p class="subtext">
+        {{ "footer.subtext" | translate }}
+      </p>
+    </div>
+    <div class="contacts">
+      <div class="item">
+        <svg class="icon icon-envelope">
+          <use xlink:href="#icon-envelope"></use>
+        </svg>
+        <p class="title">{{ "footer.item.title" | translate }}</p>
+        <p>{{ "footer.item.p" | translate }}</p>
+      </div>
+      <div class="item">
+        <svg class="icon icon-location">
+          <use xlink:href="#icon-location"></use>
+        </svg>
+        <p class="title">{{ "footer.item.title1" | translate }}</p>
+        <p class="text">
+          {{ "footer.item.p1" | translate }}
+        </p>
+      </div>
+      <div class="item">
+        <svg class="icon icon-phone">
+          <use xlink:href="#icon-phone"></use>
+        </svg>
+        <p class="title">{{ "footer.item.title2" | translate }}</p>
+        <p class="text">{{ "footer.item.p2" | translate }}</p>
+      </div>
+    </div>
+  </div>
+</footer>

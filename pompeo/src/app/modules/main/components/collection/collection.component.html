@@ -1,0 +1,22 @@
+<section>
+  <div class="wrapper">
+    <div class="head">
+      <p class="subtext">{{ "main.collection.subtext" | translate }}</p>
+      <h3>{{ "main.collection.h3" | translate }}</h3>
+    </div>
+    <div class="block">
+      <!-- Items list -->
+      <a routerLink="shop" class="content" *ngFor="let item of collectionList">
+        <div class="photo">
+          <img [src]="item.photo" alt="{{ item.alt }}" />
+        </div>
+        <p>{{ item.title | translate }}</p>
+      </a>
+    </div>
+    <div class="footer">
+      <a class="button" routerLink="shop">
+        <span>{{ "main.collection.a" | translate }}</span>
+      </a>
+    </div>
+  </div>
+</section>

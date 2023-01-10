@@ -1,0 +1,15 @@
+<section>
+  <div class="wrapper">
+    <h2>{{ "about.h2" | translate }}</h2>
+    <!-- List of items -->
+    <div [class]="item.class" *ngFor="let item of itemList">
+      <div [class]="item.photoClass">
+        <img [src]="item.photo" alt="{{ item.alt }}" />
+      </div>
+      <div class="info">
+        <p class="title">{{ item.title | translate }}</p>
+        <p class="text">{{ item.text | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>

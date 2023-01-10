@@ -1,0 +1,91 @@
+@import "../../../../../styles/variables.scss";
+@import "../../../../../styles/mixins.scss";
+@import "../../../../../styles/media.scss";
+
+section {
+  padding-top: 150px;
+  margin-bottom: 120px;
+
+  @include media("<=tablet") {
+    padding-top: 75px;
+    margin-bottom: 60px;
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.content {
+  border-bottom: 1px solid $c-grey;
+  padding-bottom: 15px;
+  transition: opacity $t-normal;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+p {
+  font-weight: 400;
+  font-size: em(16);
+  line-height: 26px;
+  color: $c-light-grey;
+}
+
+.block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 35px;
+
+  @include media("<=tablet") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media("<=phone") {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.subtext {
+  font-family: $ff-poppins;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $c-light-red;
+  margin-bottom: 20px;
+
+  @include media("<=phone") {
+    font-size: em(12);
+  }
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: $ff-poppins;
+  font-weight: 700;
+  font-size: em(40);
+  line-height: 50px;
+  color: $c-black;
+
+  @include media("<=phone") {
+    font-size: em(30);
+  }
+}
+
+.button {
+  max-width: 215px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}

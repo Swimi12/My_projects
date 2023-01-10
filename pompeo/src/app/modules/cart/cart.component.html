@@ -1,0 +1,101 @@
+<section>
+  <div class="wrapper">
+    <h3>{{ "cart.h3" | translate }}</h3>
+    <div class="list">
+      <!-- List of items -->
+      <ng-container *ngIf="list.length; else elseTemplate">
+        <div class="card" *ngFor="let item of list; let i = index">
+          <div class="photo">
+            <img [src]="item.nameFile" alt="item" />
+          </div>
+          <div class="block">
+            <div class="head">
+              <h2>{{ item.name[language] }}</h2>
+              <button class="button" type="button" (click)="deleteItem(i)">
+                {{ "cart.button" | translate }}
+              </button>
+            </div>
+            <div class="numbers">
+              <!-- Count-- -->
+              <button
+                type="button"
+                class="button button-change-amount"
+                (click)="reduceAmount(i)"
+              >
+                <svg class="icon icon-minus">
+                  <use xlink:href="#icon-minus"></use>
+                </svg>
+              </button>
+              <input
+                (input)="calculatedTotalPrice()"
+                [(ngModel)]="item.count"
+                [type]="InputTypes.NUMBER"
+                placeholder="0"
+              />
+              <!-- Count++ -->
+              <button
+                type="button"
+                class="button button-change-amount"
+                (click)="increaseAmount(i)"
+              >
+                <svg class="icon icon-plus">
+                  <use xlink:href="#icon-plus"></use>
+                </svg>
+              </button>
+              <!-- Check Max Amount -->
+              <ng-container *ngIf="item.count! > item.amount">
+                <div class="modal-window">
+                  <div class="content cencel">
+                    <h3>
+                      {{ "cart.maxAmount" | translate }}
+                      <span class="amount">{{ item.amount }}</span>
+                    </h3>
+                    <div class="buttons">
+                      <button
+                        type="button"
+                        class="button"
+                        (click)="checkMaxAmount(i)"
+                      >
+                        {{ "cart.cancel" | translate }}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </ng-container>
+              <!-- Check Min Amount -->
+              <ng-container *ngIf="item.count == 0">
+                <div class="modal-window">
+                  <div class="content">
+                    <h3>{{ "cart.deleteItem" | translate }}</h3>
+                    <div class="buttons">
+                      <button type="button" class="button" (click)="cancel(i)">
+                        {{ "cart.cancel" | translate }}
+                      </button>
+                      <button
+                        class="button"
+                        type="button"
+                        (click)="deleteItem(i)"
+                      >
+                        {{ "cart.button" | translate }}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </ng-container>
+              <span class="item-price">{{ item.price | currency }}</span>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+      <!-- Checks if the cart is empty  -->
+      <ng-template #elseTemplate>
+        <p class="title">{{ "cart.empty" | translate }}</p>
+      </ng-template>
+    </div>
+    <!-- Total price -->
+    <div class="total" *ngIf="list.length > 0">
+      <p class="text">{{ "cart.total" | translate }}:</p>
+      <span>{{ calculatedTotalPrice() | currency }}</span>
+    </div>
+  </div>
+</section>

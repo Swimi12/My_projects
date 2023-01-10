@@ -1,0 +1,12 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/animation.scss";
+
+h1 {
+  animation: fadeInRight 700ms ease-in-out;
+  font-family: $ff-pacifico;
+  font-weight: 400;
+  font-size: em(32);
+  line-height: 40px;
+  color: $c-black;
+}

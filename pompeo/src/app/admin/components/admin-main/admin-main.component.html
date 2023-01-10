@@ -1,0 +1,53 @@
+<div class="wrapper">
+  <header>
+    <app-logo></app-logo>
+    <div class="buttons">
+      <a class="button" routerLink="">Main</a>
+      <a class="button" routerLink="/admin/add-item">Add item</a>
+    </div>
+  </header>
+  <!-- * Table -->
+  <div class="wrapper">
+    <table border="0" cellPadding="0" cellSpacing="0">
+      <!-- * Table head -->
+      <thead>
+        <tr>
+          <th align="start">ID</th>
+          <th>Photo</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Amount</th>
+          <th>DELETE</th>
+          <th align="center">CHANGE</th>
+        </tr>
+      </thead>
+      <!-- * Table body -->
+      <tbody>
+        <tr *ngFor="let item of list">
+          <td align="start">{{ item._id }}</td>
+          <td align="start"><img [src]="item.nameFile" alt="item Photo" /></td>
+          <td align="center">{{ item.name.en }}</td>
+          <td align="center">{{ item.price | currency }}</td>
+          <td align="center">{{ item.amount }}</td>
+          <td align="center">
+            <button
+              type="button"
+              class="button button-table"
+              (click)="deleteItem(item._id)"
+            >
+              DELETE
+            </button>
+          </td>
+          <td align="center">
+            <a
+              [routerLink]="['/admin/update', item._id]"
+              class="button button-table"
+              type="button"
+              >CHANGE</a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

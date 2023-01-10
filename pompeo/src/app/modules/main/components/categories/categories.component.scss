@@ -1,0 +1,214 @@
+@import "../../../../../styles/variables.scss";
+@import "../../../../../styles/mixins.scss";
+@import "../../../../../styles/media.scss";
+@import "../../../../../styles/animation.scss";
+
+section {
+  margin-top: 120px;
+  padding-bottom: 120px;
+  border-bottom: 1px solid $c-grey;
+  overflow: hidden;
+
+  @include media("<=tablet") {
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.subtext {
+  font-family: $ff-poppins;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $c-light-red;
+  margin-bottom: 40px;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+h3 {
+  font-family: $ff-poppins;
+  font-weight: 700;
+  font-size: em(40);
+  line-height: 50px;
+  color: $c-black;
+
+  @include media("<=tablet") {
+    font-size: em(29);
+  }
+
+  @include media("<=small") {
+    font-size: em(24);
+  }
+}
+
+span {
+  font-family: $ff-playfair;
+  font-weight: 400;
+  color: $c-red;
+}
+
+.block {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 90px;
+  position: relative;
+
+  @include media("<=desktop") {
+    margin-bottom: 40px;
+  }
+}
+
+.circle {
+  animation: stretch 1500ms ease-out alternate infinite;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 30px solid rgba($c-black, 0.05);
+
+  &:first-child {
+    background: $c-yellow;
+  }
+
+  &:nth-child(2) {
+    background: $c-orange;
+    animation-delay: 0.75s;
+  }
+
+  &:last-child {
+    background: $c-dark-red;
+    animation-delay: 1.5s;
+  }
+
+  @include media("<=desktop") {
+    width: 200px;
+    height: 200px;
+  }
+
+  @include media("<=tablet") {
+    width: 150px;
+    height: 150px;
+  }
+
+  @include media("<=phone") {
+    width: 100px;
+    height: 100px;
+    border: 15px solid rgba($c-black, 0.05);
+  }
+
+  @include media("<=small") {
+    width: 80px;
+    height: 80px;
+    border: 10px solid rgba($c-black, 0.05);
+  }
+}
+
+.photo {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 5px;
+
+  @include media("<=tablet") {
+    width: 30px;
+    height: 30px;
+  }
+
+  @include media("<=phone") {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.block span {
+  font-family: $ff-poppins;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $c-white;
+
+  @include media("<=tablet") {
+    font-size: em(12);
+  }
+
+  @include media("<=phone") {
+    font-size: em(8);
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+
+  @include media("<=phone") {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.content {
+  width: 100%;
+  max-width: 500px;
+
+  @include media("<=desktop") {
+    max-width: 350px;
+  }
+
+  @include media("<=tablet") {
+    max-width: 250px;
+  }
+
+  @include media("<=phone") {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.title {
+  max-width: 400px;
+  font-family: $ff-poppins;
+  font-weight: 700;
+  font-size: em(30);
+  line-height: 36px;
+  color: $c-black;
+  margin-bottom: 25px;
+
+  @include media("<=desktop") {
+    font-size: em(24);
+    max-width: 320px;
+  }
+
+  @include media("<=tablet") {
+    font-size: em(18);
+  }
+}
+
+p {
+  font-weight: 400;
+  line-height: 24px;
+
+  @include media("<=desktop") {
+    font-size: em(12);
+  }
+
+  @include media("<=tablet") {
+    font-size: em(10);
+  }
+}

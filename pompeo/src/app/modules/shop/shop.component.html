@@ -1,0 +1,17 @@
+<section *ngIf="list">
+  <div class="wrapper">
+    <!-- Items list -->
+    <div class="card" *ngFor="let item of list">
+      <a class="item" [routerLink]="['/product', item._id]">
+        <div class="photo">
+          <img [src]="item.nameFile" alt="item photo" />
+        </div>
+        <h2>{{ item.name[language] }}</h2>
+        <div class="numbers">
+          <p>{{ "shop.price" | translate }}: {{ item.price | currency }}</p>
+          <p>{{ "shop.amount" | translate }}: {{ item.amount }}</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>

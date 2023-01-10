@@ -1,0 +1,55 @@
+<header>
+  <div class="wrapper header-wrapper">
+    <!-- Logo -->
+    <app-logo></app-logo>
+    <!-- Navigation -->
+    <div class="block" *ngIf="isMobileMode ? isShowNavigation : true">
+      <div class="navigation">
+        <ul class="list">
+          <li class="item" *ngFor="let item of navigationList">
+            <a
+              [routerLink]="item.route"
+              (click)="isShowNavigation = false"
+              class="link"
+              >{{ item.link | translate }}</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- Cart -->
+      <div class="line"></div>
+      <a routerLink="/cart" class="cart" (click)="isShowNavigation = false">
+        <svg class="icon icon-cart">
+          <use xlink:href="#icon-cart"></use>
+        </svg>
+        <span class="cart-text">{{ "header.cart" | translate }}</span>
+        <span class="amountOfCart">{{ amountOfCart }}</span>
+      </a>
+      <div class="line"></div>
+      <!-- Change language -->
+      <div class="languages">
+        <button
+          type="button"
+          class="button button-transparent button-lang"
+          (click)="changeLanguage(language.UA); isShowNavigation = false"
+        >
+          UA
+        </button>
+        <span class="languages-line">|</span>
+        <button
+          type="button"
+          class="button button-transparent button-lang"
+          (click)="changeLanguage(language.EN); isShowNavigation = false"
+        >
+          EN
+        </button>
+      </div>
+    </div>
+    <!-- Burger -->
+    <app-burger
+      *ngIf="isMobileMode"
+      [isOpen]="isShowNavigation"
+      (toggle)="isShowNavigation = !isShowNavigation"
+    ></app-burger>
+  </div>
+</header>

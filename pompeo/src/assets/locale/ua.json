@@ -1,0 +1,138 @@
+{
+  "header": {
+    "navigation": {
+      "about": "Про нас",
+      "contacts": "Контакти",
+      "shop": "Магазин",
+      "home": "Головна"
+    },
+
+    "cart": "Кошик"
+  },
+
+  "main": {
+    "banner": {
+      "h": "Унікальний фарфор",
+      "h1": "Кам'яна колекція",
+      "p": "кераміка Помпео",
+      "p2": "Багато рутинних завдань? У нас є рішення.",
+      "button": "асортимент магазину"
+    },
+    "categories": {
+      "p": "Категорії товарів",
+      "h": "Порцеляна",
+      "h1": "Кераміка",
+      "circle": {
+        "1": "Вази",
+        "2": "Кружки",
+        "3": "Тарілки"
+      },
+      "title": "Гончарство ручної\n роботи з 1990 року",
+      "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus posuere.",
+      "title1": "Ми надаємо\n гончарні вироби преміум-класу",
+      "p2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus posuere."
+    },
+
+    "info": {
+      "h3": "Золота та чорна кераміка",
+      "p": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore dolore aua. Ut enim ad minim veniam, quis nostrud exercitationulco laboris nisi ut aliquip ex ea commodo consequatuisaute.",
+      "h": "Помаранчева кераміка",
+      "p1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore dolore aua. Ut enim ad minim veniam, quis nostrud exercitationulco laboris nisi ut aliquip ex ea commodo consequatuisaute.",
+      "button": "Деталі"
+    },
+
+    "collection": {
+      "subtext": "Категорії товарів",
+      "h3": "Порцелянова кераміка",
+      "block": {
+        "text1": "Декоративна тарілка",
+        "text2": "М'ятна кераміка",
+        "text3": "Набір кераміки",
+        "text4": "Помаранчева кераміка",
+        "text5": "Темна чаша",
+        "text6": "Квадратна кераміка"
+      },
+      "a": "Переглянути всі товари"
+    },
+
+    "new-collection": {
+      "subtext": "кераміка Помпео",
+      "h3": "Готові до шопінгу?",
+      "p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit . Suspendisse varius enim in eros elementum.",
+      "a": "Нова колекція"
+    },
+
+    "latest-news": {
+      "subtext": "Останні новини",
+      "h": "Останні новини",
+      "h1": "Нові оновлення",
+      "error_1": "Це поле є обов'язковим",
+      "error_2": "Введіть коректні символи",
+      "button": "Підписатися",
+      "p": "Підпишіться на нашу розсилку",
+      "email": "Введіть вашу електронну пошту"
+    }
+  },
+
+  "contacts": {
+    "h3": "Ми на карті"
+  },
+
+  "about": {
+    "h2": "Про нас",
+    "info": {
+      "title": "З 1990 року ми працюємо з Вами",
+      "p": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti,reiciendis sequi dolores dolor quidem inventore molestias cupiditate consequatur, mollitia quo distinctio! Officiis molestias provident eos expedita odit delectus, consequatur quos vitae vel exercitationem nam nihil suscipit quidem alias omnis dolor obcaecati aperiam, fugit id veritatis iure accusantium aut. Perferendis amet ducimus iure quisquam reprehenderit voluptatum harum rem ut illo mollitia. Perspiciatis voluptates molestiae nostrum voluptate. Corrupti cum minima iste! Esse at quo deleniti voluptates debitis soluta reiciendis quibusdam a tenetur, similique aliquid iste nihil sunt aperiam natus unde, doloribus iure fugiat? Dignissimos iste ratione optio iusto provident ipsam consequatur sapiente?",
+      "title1": "Наш посуд підходить для будь-яких інтер'єрів",
+      "p1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti,reiciendis sequi dolores dolor quidem inventore molestias cupiditate consequatur, mollitia quo distinctio! Officiis molestias provident eos expedita odit delectus, consequatur quos vitae vel exercitationem nam nihil suscipit quidem alias omnis dolor obcaecati aperiam, fugit id veritatis iure accusantium aut. Perferendis amet ducimus iure quisquam reprehenderit voluptatum harum rem ut illo mollitia. Perspiciatis voluptates molestiae nostrum voluptate. Corrupti cum minima iste! Esse at quo deleniti voluptates debitis soluta reiciendis quibusdam a tenetur, similique aliquid iste nihil sunt aperiam natus unde, doloribus iure fugiat? Dignissimos iste ratione optio iusto provident ipsam consequatur sapiente?",
+      "title2": "Ми маємо широкий асортимент продукції",
+      "p2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti,reiciendis sequi dolores dolor quidem inventore molestias cupiditate consequatur, mollitia quo distinctio! Officiis molestias provident eos expedita odit delectus, consequatur quos vitae vel exercitationem nam nihil suscipit quidem alias omnis dolor obcaecati aperiam, fugit id veritatis iure accusantium aut. Perferendis amet ducimus iure quisquam reprehenderit voluptatum harum rem ut illo mollitia. Perspiciatis voluptates molestiae nostrum voluptate. Corrupti cum minima iste! Esse at quo deleniti voluptates debitis soluta reiciendis quibusdam a tenetur, similique aliquid iste nihil sunt aperiam natus unde, doloribus iure fugiat? Dignissimos iste ratione optio iusto provident ipsam consequatur sapiente?"
+    }
+  },
+
+  "404": {
+    "p": "Вибачте, ця сторінка не працює",
+    "span": "Тому ми не можем поділитись з вами гарними речами",
+    "button": "Головна"
+  },
+
+  "footer": {
+    "subtext": "Я завжди прагнув зафіксувати красу в дереві, камені, \nсклі чи кераміці, це було моїм кредо.",
+    "item": {
+      "title": "ЕЛЕКТРОННА ПОШТА",
+      "p": "pompeopotery@gmail.com",
+      "title1": "ЗНАЙТИ",
+      "p1": "Центральний парк, Манхеттен, \nНью-Йорк, 1101",
+      "title2": "ТЕЛЕФОН",
+      "p2": "+1 292 345 678"
+    }
+  },
+
+  "shop": {
+    "button": "Купити",
+    "price": "Ціна",
+    "amount": "Кількість"
+  },
+
+  "product": {
+    "description": "Опис",
+    "view": "Переглянути кошик",
+    "a": "назад"
+  },
+
+  "cart": {
+    "h3": "Кошик",
+    "button": "ВИДАЛИТИ",
+    "empty": "Кошик порожній",
+    "total": "Всього",
+    "deleteItem": "Видалити товар?",
+    "cancel": "Відмінити",
+    "maxAmount": "Максимальна кількість"
+  },
+
+  "snack-bar": {
+    "messeage": "Товар додано до кошика",
+    "subscribe": "Готово",
+    "action": "Закрити"
+  }
+}

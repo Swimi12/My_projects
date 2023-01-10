@@ -1,0 +1,129 @@
+@import "../../../../../styles/variables.scss";
+@import "../../../../../styles/mixins.scss";
+@import "../../../../../styles/media.scss";
+@import "../../../../../styles/animation.scss";
+
+section {
+  overflow: hidden;
+  padding-top: 220px;
+  border-bottom: 1px solid $c-grey;
+  padding-bottom: 120px;
+
+  @include media("<=tablet") {
+    padding-top: 110px;
+    padding-bottom: 60px;
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 220px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &-reverse {
+    flex-direction: row-reverse;
+  }
+
+  @include media("<=tablet") {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+  }
+}
+
+.content {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.rectangle {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 220px;
+  background-color: $c-silver;
+  margin-right: 5px;
+  margin-bottom: 100px;
+
+  &-reverse {
+    margin-right: 0;
+    margin-left: 5px;
+  }
+
+  @include media("<=tablet") {
+    margin-right: 0;
+
+    &-reverse {
+      margin-left: 0;
+    }
+  }
+}
+
+.vase {
+  position: absolute;
+  top: calc(50% - 250px);
+  left: calc(50% - 130px);
+  width: 250px;
+  height: 500px;
+
+  @include media("<=tablet") {
+    top: calc(50% - 200px);
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 400px;
+  }
+
+  @include media("<=phone") {
+    top: calc(50% - 150px);
+    left: calc(50% - 75px);
+    width: 150px;
+    height: 300px;
+  }
+}
+
+.mugs {
+  position: absolute;
+  top: calc(50% - 210px);
+  left: calc(50% - 175px);
+  width: 350px;
+  height: 420px;
+
+  @include media("<=tablet") {
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 350px;
+  }
+
+  @include media("<=phone") {
+    top: calc(50% - 150px);
+    left: calc(50% - 125px);
+    width: 250px;
+    height: 300px;
+  }
+}
+
+h3 {
+  font-family: $ff-poppins;
+  font-weight: 700;
+  font-size: em(24);
+  color: $c-black;
+  margin-bottom: 25px;
+}
+
+p {
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 25px;
+}

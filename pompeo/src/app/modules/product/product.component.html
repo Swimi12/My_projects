@@ -1,0 +1,35 @@
+<section *ngIf="item">
+  <div class="wrapper">
+    <div class="back">
+      <a routerLink="/shop" class="button routerLink">{{
+        "product.a" | translate
+      }}</a>
+    </div>
+    <div class="card">
+      <div class="head">
+        <div class="photo">
+          <img [src]="item.nameFile" alt="item photo" />
+        </div>
+        <div class="info">
+          <h2>{{ item.name[language] }}</h2>
+          <p>{{ "shop.price" | translate }}: {{ item.price | currency }}</p>
+          <p>{{ "shop.amount" | translate }}: {{ item.amount }}</p>
+          <ng-container *ngIf="!isButtonClicked; else elseTemplate">
+            <button class="button" (click)="addToCart(item)" type="button">
+              {{ "shop.button" | translate }}
+            </button>
+          </ng-container>
+          <ng-template #elseTemplate>
+            <a routerLink="/cart" class="button">
+              {{ "product.view" | translate }}
+            </a>
+          </ng-template>
+        </div>
+      </div>
+      <p class="title">{{ "product.description" | translate }}</p>
+      <p>
+        {{ item.description[language] }}
+      </p>
+    </div>
+  </div>
+</section>

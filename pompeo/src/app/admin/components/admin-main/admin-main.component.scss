@@ -1,0 +1,80 @@
+@import "../../../../styles/variables.scss";
+@import "../../../../styles/media.scss";
+
+.wrapper {
+  margin-top: 50px;
+  overflow-x: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+}
+
+a {
+  min-width: 125px;
+  margin-right: 10px;
+  height: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.button {
+  @include media("<=phone") {
+    height: 40px;
+    min-width: 70px;
+  }
+}
+
+.button-table {
+  background-color: $c-light-grey;
+  max-width: fit-content;
+  min-width: fit-content;
+  height: 30px;
+  padding: 0 5px;
+}
+
+table {
+  min-width: 1000px;
+  width: 100%;
+}
+
+th {
+  border-bottom: 2px solid red;
+  padding: 10px 0px;
+
+  &:nth-child(2) {
+    width: 50px;
+  }
+}
+
+td {
+  padding: 10px 0px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  &:last-child {
+    border-right: none;
+  }
+
+  &:nth-child(2) {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+tr {
+  &:last-child {
+    td {
+      border-bottom: none;
+    }
+  }
+}

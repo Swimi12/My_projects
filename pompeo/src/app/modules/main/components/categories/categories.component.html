@@ -1,0 +1,40 @@
+<section>
+  <div class="wrapper">
+    <div class="head">
+      <p class="subtext">{{ "main.categories.p" | translate }}</p>
+      <h3>
+        {{ "main.categories.h" | translate }} <span>&</span>
+        {{ "main.categories.h1" | translate }}
+      </h3>
+    </div>
+    <div class="block">
+      <!-- Circles -->
+      <div class="circle" *ngFor="let item of circleList">
+        <div class="photo">
+          <img [src]="item.photo" alt="{{ item.alt }}" />
+        </div>
+        <span>{{ item.text | translate }}</span>
+      </div>
+    </div>
+    <div class="info">
+      <!-- Animation -->
+      <div class="content" [@fadeInLeft]="state">
+        <p class="title">
+          {{ "main.categories.title" | translate }}
+        </p>
+        <p>
+          {{ "main.categories.p1" | translate }}
+        </p>
+      </div>
+      <!-- Animation -->
+      <div class="content" [@fadeInRight]="state">
+        <p class="title">
+          {{ "main.categories.title1" | translate }}
+        </p>
+        <p>
+          {{ "main.categories.p2" | translate }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
