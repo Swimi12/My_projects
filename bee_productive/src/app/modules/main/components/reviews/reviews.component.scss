@@ -1,0 +1,30 @@
+@import "../../../../../styles/variables.scss";
+@import "../../../../../styles/mixins.scss";
+@import "../../../../../styles/media.scss";
+
+section {
+  margin-bottom: 60px;
+
+  @include media("<=phone") {
+    margin-bottom: 30px;
+  }
+}
+
+.reviews-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: em(48);
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  margin-bottom: 135px;
+  @include media("<=phone") {
+    margin-bottom: 50px;
+    font-size: em(36);
+  }
+}
+

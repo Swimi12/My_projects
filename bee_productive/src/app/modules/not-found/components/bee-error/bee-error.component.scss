@@ -1,0 +1,17 @@
+@import "../../../../../styles/media.scss";
+
+svg {
+  width: 600px;
+
+  @include media("<=desktop") {
+    width: 500px;
+  }
+
+  @include media("<=tablet") {
+    width: 400px;
+  }
+
+  @include media("<=phone") {
+    width: 300px;
+  }
+}

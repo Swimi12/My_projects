@@ -1,0 +1,79 @@
+@import "../../../../../styles/variables.scss";
+@import "../../../../../styles/mixins.scss";
+@import "../../../../../styles/media.scss";
+
+.swiper {
+  padding: 30px 0px;
+  max-width: 1360px;
+  width: 100%;
+}
+
+.swiper-slide {
+  max-width: 390px;
+}
+
+.comment {
+  background-color: $c-white;
+  border: 1px solid $c-moss-green;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 385px;
+  height: 260px;
+  position: relative;
+
+  @include media("<=phone") {
+    max-width: 270px;
+    height: 300px;
+  }
+}
+
+.orange {
+  position: absolute;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  background-color: $c-orange;
+  top: -27px;
+  left: 27px;
+}
+
+.stars {
+  font-size: em(16);
+  padding-top: 40px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  color: $c-blue;
+}
+
+.text {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $c-silver;
+  margin-bottom: 20px;
+  font-size: em(16);
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+.user {
+  margin-left: 30px;
+  display: flex;
+}
+
+.photo {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+
+.first-last-name {
+  font-weight: 700;
+  font-size: em(14);
+  line-height: 17px;
+  margin-bottom: 2px;
+}
+
+.subtext {
+  font-weight: 400;
+  font-size: em(12);
+  line-height: 15px;
+}

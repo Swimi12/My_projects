@@ -1,0 +1,91 @@
+@import "../../../../../styles/variables.scss";
+@import "../../../../../styles/mixins.scss";
+@import "../../../../../styles/media.scss";
+
+section {
+  background: $c-gradient-orange;
+  margin: 0 auto;
+  margin-top: 177px;
+}
+
+.block {
+  display: flex;
+  margin-bottom: 80px;
+  @include media("<=desktop") {
+    flex-direction: column;
+  }
+  @include media("<=tablet") {
+    margin-bottom: 40px;
+  }
+}
+
+.side {
+  margin-right: 110px;
+  &:last-child {
+    margin-right: 0;
+  }
+  @include media("<=desktop") {
+    margin-right: 0;
+  }
+  &-adaptation {
+    @include media("<=desktop") {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+h1 {
+  margin-bottom: 30px;
+  @include media("<=phone") {
+    font-size: em(32);
+  }
+}
+
+.text {
+  margin-bottom: 50px;
+  @include media("<=phone") {
+    font-size: em(18);
+  }
+}
+
+button {
+  margin-bottom: 65px;
+}
+
+.bee {
+  position: relative;
+}
+
+.text-transform {
+  animation: changeColor 3000ms infinite linear;
+  position: absolute;
+  font-family: $ff-kalam;
+  font-weight: 700;
+  font-size: em(32);
+  line-height: 38px;
+  transform: rotate(23.48deg);
+  text-align: center;
+  width: 100%;
+  max-width: 270px;
+  top: 70%;
+  left: -135px;
+  @include media("<=tablet") {
+    font-size: em(16);
+    max-width: 135px;
+    line-height: 20px;
+    top: 70%;
+    left: -52px;
+  }
+  @include media("<=phone") {
+    font-size: em(14);
+    top: 70%;
+    left: -40px;
+  }
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 75px;
+}

@@ -1,0 +1,109 @@
+{
+  "header": {
+    "navigation": {
+      "about": "About",
+      "advantage": "Advantage",
+      "contact": "Contact"
+    },
+
+    "buttons": {
+      "log-in": "Log in",
+      "sign-in": "Sign in"
+    }
+  },
+
+  "banner": {
+    "h1": "A useful app for organizing your affairs.",
+    "button": "Get started",
+    "text": "Many routine tasks? We have a solution.",
+    "content": {
+      "subtext": "Happy Customers",
+      "ratting": "Ratting"
+    }
+  },
+
+  "features": {
+    "h2": "Features for a better experience",
+    "title_1": "Customization",
+    "text_1": "The app is fully customizable - you can name your habit, choose a ...",
+    "title_2": "Statistics",
+    "text_2": "Track your habits and analyze progress for a task - build ...",
+    "title_3": "Managment",
+    "text_3": "Habits and tasks broken down into daily fragments of your ..."
+  },
+
+  "about": {
+    "h3": "About",
+    "p1": "BeeProductive is a free and easy-to-use habit tracker that helps you build a routine of positive, life changing habits. Set personal goals, track your progress, and motivate yourself to achieve new heights!",
+    "p2": "BeeProductive habit tracker is here to help you make the most of your task management and get things done. Whether you want to break bad, arrange a good habits list, or set task reminder, our app will guide and motivate you on a daily basis. Achieve your goals with our task tracker!"
+  },
+
+  "advantage": {
+    "h3": "Advantage",
+    "pBold": "PREMIUM FEATURES",
+    "p1": "Subscribe to Premium for even more great features to boost your personal productivity:",
+    "p2": "- Unlimited number of habits\n - Improved reminders for your task and habit lists\n - Motivating stats for each habit",
+    "p3": "There are many things you may want to improve. Productive will help you track your habits, like taking your pills regularly, exercising, or keeping to a diet. It can also be used by people who have difficulty focusing and concentrating, allowing them to create their own daily tasks and habits to work on."
+  },
+
+  "reviews": {
+    "h3": "What Our Happy User Says",
+    "swiper": {
+      "text_1": "The best app I've ever come across. Now my working day is planned and I can breathe freely.",
+      "subtext_1": "Teacher",
+      "text_2": "I have a very busy schedule and I always had trouble planning my tasks and often forgot a lot. With this app I became superman.",
+      "subtext_2": "Hairdresser",
+      "text_3": "I am a creative person and often delve into my creative work. BeeProductive helped me develop my own strategy for a productive day.",
+      "subtext_3": "Architect",
+      "text_4": "I haven't had time for myself for a long time. Everyday routine habits simply exhausted me. This app helped me to do my daily tasks.",
+      "subtext_4": "Housewife"
+    }
+  },
+
+  "contacts": {
+    "h3": "How to find us",
+    "p": "766 Mission St, San Francisco, CA 94103, USA"
+  },
+
+  "footer": {
+    "h4": "Join a Newsletter",
+    "p": "Your Email",
+    "button": "Subscribe",
+    "placeholder": "Enter Your Email"
+  },
+
+  "error": "Oops! It seems that the bee is tired.",
+
+  "regestration": {
+    "first-name": {
+      "title": "First name",
+      "error_1": "This field is required",
+      "error_2": "Minimum name length"
+    },
+    "last-name": {
+      "title": "Last name",
+      "error_1": "This field is required",
+      "error_2": "Minimum name length"
+    },
+    "email": {
+      "title": "Email",
+      "error_1": "This field is required",
+      "error_2": "Enter the correct characters"
+    },
+    "password": {
+      "title": "Password",
+      "error_1": "This field is required",
+      "error_2": "Minimum length"
+    },
+    "username": {
+      "title": "Username",
+      "error_1": "This field is required",
+      "error_2": "Minimum name length"
+    },
+    "button": {
+      "submit": "Submit",
+      "next": "Next"
+    },
+    "h3": "Keep in touch!"
+  }
+}

@@ -1,0 +1,186 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/media.scss";
+
+.wrapper {
+  margin-top: 100px;
+  z-index: 992;
+  background-color: $c-white;
+  border-radius: 50px;
+  max-width: 970px;
+  width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 65px 40px 65px;
+  position: relative;
+  @include media("<=tablet") {
+    padding: 15px 35px 20px 35px;
+  }
+  @include media("<=phone") {
+    padding: 15px 10px 20px 10px;
+  }
+}
+
+.head {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 40px;
+  &-second {
+    height: 350px;
+    justify-content: center;
+  }
+  &-last {
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  @include media("<=small") {
+    width: 100%;
+  }
+}
+
+.photo {
+  position: absolute;
+  top: 100px;
+  right: 65px;
+  @include media("<=desktop") {
+    width: 280px;
+  }
+  @include media("<=tablet") {
+    width: 200px;
+    top: 150px;
+  }
+  @include media("<=phone") {
+    right: 10px;
+    width: 190px;
+  }
+  @include media("<=small") {
+    z-index: -1;
+    right: calc(50% - 125px);
+    width: 250px;
+  }
+}
+
+input {
+  height: 40px;
+  background: $c-white;
+  border: 1px solid $c-moss-green;
+  border-radius: 16px;
+  max-width: 390px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 400;
+  font-size: em(16);
+  line-height: 20px;
+  outline: none;
+  transition: opacity $t-normal;
+  &:hover {
+    opacity: 0.9;
+  }
+  &:focus {
+    border: 1px solid $c-orange;
+  }
+  &::placeholder {
+    color: $c-moss-green;
+  }
+}
+
+.error {
+  font-size: em(16);
+  height: 25px;
+  color: $c-orange;
+  text-align: end;
+  width: 100%;
+  max-width: 390px;
+}
+
+span {
+  font-weight: 500;
+  font-size: em(20);
+  line-height: 24px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+label {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 50px;
+  }
+}
+
+.valid {
+  border: 1px solid green;
+}
+
+.invalid {
+  border: 1px solid red;
+}
+
+.item {
+  margin-bottom: 0;
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: em(20);
+  line-height: 24px;
+  opacity: 0.2;
+  &-active {
+    color: $c-blue;
+    opacity: 1;
+  }
+}
+
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: em(36);
+  line-height: 49px;
+  @include media("<=phone") {
+    font-size: em(24);
+  }
+  @include media("<=small") {
+    font-size: em(18);
+  }
+}
+
+.button-password {
+  animation: none;
+  position: absolute;
+  top: calc(50% - 20px);
+  left: -50px;
+}
+
+button span {
+  margin-bottom: 0;
+}
+
+.registarion {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba($c-black, 0.5);
+  z-index: 50;
+}

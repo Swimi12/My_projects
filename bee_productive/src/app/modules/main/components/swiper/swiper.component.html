@@ -1,0 +1,28 @@
+<div class="swiper" #swiper>
+  <!-- Additional required wrapper-->
+  <div class="swiper-wrapper">
+    <!-- Slides-->
+    <div class="swiper-slide" *ngFor="let item of list">
+      <div class="comment">
+        <div class="orange"></div>
+        <div class="stars">
+          <svg class="icon"><use xlink:href="#icon-star"></use></svg
+          ><svg class="icon"><use xlink:href="#icon-star"></use></svg
+          ><svg class="icon"><use xlink:href="#icon-star"></use></svg
+          ><svg class="icon"><use xlink:href="#icon-star"></use></svg
+          ><svg class="icon"><use xlink:href="#icon-star"></use></svg>
+        </div>
+        <p class="text">{{ item.text | translate }}</p>
+        <div class="user">
+          <div class="photo">
+            <img [src]="item.src" [alt]="item.alt" />
+          </div>
+          <div>
+            <p class="first-last-name">{{ item.name }}</p>
+            <p class="subtext">{{ item.subtext | translate }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

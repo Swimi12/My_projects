@@ -1,0 +1,56 @@
+<header>
+  <div class="wrapper header-wrapper">
+    <!-- Logo -->
+    <app-logo></app-logo>
+    <div class="block" *ngIf="isMobileMode ? isShowNavigation : true">
+      <!-- Navigation -->
+      <div class="navigation">
+        <ul class="list">
+          <!-- Navigation list -->
+          <li class="item" *ngFor="let item of navigationList">
+            <a (click)="scrollToElement(item.route)" class="link">{{
+              item.link | translate
+            }}</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Chnage languages -->
+      <div class="languages">
+        <button
+          type="button"
+          class="button button-transparent button-lang"
+          (click)="changeLanguage(language.ua)"
+        >
+          UA
+        </button>
+        <span>|</span>
+        <button
+          type="button"
+          class="button button-transparent button-lang"
+          (click)="changeLanguage(language.en)"
+        >
+          EN
+        </button>
+      </div>
+      <!-- log in -->
+      <button type="button" class="button button-transparent">
+        <span>{{ "header.buttons.log-in" | translate }}</span>
+      </button>
+      <!-- Sign in -->
+      <button type="button" class="button" (click)="isShowRegistration = true">
+        <span>{{ "header.buttons.sign-in" | translate }}</span>
+      </button>
+    </div>
+    <!-- Burger -->
+    <app-burger
+      *ngIf="isMobileMode"
+      [isOpen]="isShowNavigation"
+      (toggle)="isShowNavigation = !isShowNavigation"
+    ></app-burger>
+  </div>
+</header>
+<!-- Registration -->
+<app-registration
+  (onclick)="isShowRegistration = !isShowRegistration"
+  *ngIf="isShowRegistration"
+></app-registration>

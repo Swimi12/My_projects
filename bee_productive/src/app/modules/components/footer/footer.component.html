@@ -1,0 +1,30 @@
+<footer>
+  <div class="wrapper footer-wrapper">
+    <div class="block">
+      <div class="logo">
+        <!-- Logo -->
+        <app-logo></app-logo>
+      </div>
+      <!-- Social -->
+      <app-social></app-social>
+    </div>
+    <div class="block">
+      <h4>{{ "footer.h4" | translate }}</h4>
+      <p>{{ "footer.p" | translate }}</p>
+      <div class="regestration">
+        <!-- Subscribe -->
+        <form method="get">
+          <!-- Email -->
+          <label
+            ><input
+              type="email"
+              placeholder="{{ 'footer.placeholder' | translate }}"
+          /></label>
+        </form>
+        <button class="button button-text-black" type="submit">
+          <span>{{ "footer.button" | translate }}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>

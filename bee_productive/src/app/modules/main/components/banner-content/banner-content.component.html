@@ -1,0 +1,21 @@
+<div class="content">
+  <div class="photo">
+    <div *ngFor="let item of list">
+      <img [src]="item.img" [alt]="item.alt" />
+    </div>
+  </div>
+  <div class="text">
+    <p class="title">2,291</p>
+    <div class="subtext">{{ "banner.content.subtext" | translate }}</div>
+  </div>
+  <div class="line"></div>
+  <div class="ratting">
+    <p>4.8/5</p>
+    <div class="stars">
+      <div [class]="item.class" *ngFor="let item of listStar">
+        <svg class="icon"><use xlink:href="#icon-star"></use></svg>
+      </div>
+      <span>{{ "banner.content.ratting" | translate }}</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div>
+  <h2>{{ "features.h2" | translate }}</h2>
+  <div class="content">
+    <div class="block" *ngFor="let item of list">
+      <div class="img">
+        <img [src]="item.img" alt="{{ item.alt }}" />
+      </div>
+      <div>
+        <div>
+          <span>{{ item.title | translate }}</span>
+        </div>
+        <p>
+          {{ item.text | translate }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

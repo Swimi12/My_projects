@@ -1,0 +1,105 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/media.scss";
+
+footer {
+  background-color: $c-blue;
+  padding-top: 65px;
+  padding-bottom: 80px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @include media("<=phone") {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.block {
+  width: 50%;
+  padding: 5px;
+
+  @include media("<=phone") {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+h4 {
+  line-height: 34px;
+  color: $c-white;
+  margin-bottom: 35px;
+
+  @include media("<=phone") {
+    white-space: pre;
+    margin-bottom: 15px;
+    font-size: em(14);
+  }
+}
+
+p {
+  font-weight: 400;
+  font-size: em(16);
+  line-height: 25px;
+  color: $c-white;
+  margin-bottom: 20px;
+}
+
+.regestration {
+  display: flex;
+
+  @include media("<=custom-820") {
+    flex-direction: column;
+  }
+}
+
+form {
+  width: 100%;
+  margin-right: 20px;
+
+  @include media("<=custom-820") {
+    margin-bottom: 20px;
+  }
+}
+
+input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 425px;
+  background: $c-white;
+  border: 5px solid transparent;
+  border-radius: 20px;
+  height: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 400;
+  font-size: em(16);
+  line-height: 20px;
+  outline: none;
+  transition: opacity $t-normal;
+  border: 1px solid transparent;
+  &:hover {
+    opacity: 0.9;
+  }
+  &:focus {
+    border: 1px solid $c-orange;
+  }
+  &::placeholder {
+    color: $c-moss-green;
+  }
+}
+
+.logo{
+  margin-bottom: 40px;
+}

@@ -1,0 +1,228 @@
+<div class="registarion">
+  <div class="wrapper">
+    <!-- Registration -->
+    <form [formGroup]="form" class="form">
+      <!-- Form head -->
+      <div class="head">
+        <!-- Logo -->
+        <app-logo></app-logo>
+        <!-- Close button -->
+        <button
+          class="button button--close"
+          type="button"
+          (click)="onclick.emit()"
+        >
+          <svg class="icon">
+            <use xlink:href="#icon-cross"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- First Step -->
+      <ng-container *ngIf="regestrationStep === 0">
+        <div class="content">
+          <!-- First name -->
+          <label>
+            <span>{{ "regestration.first-name.title" | translate }}</span>
+            <input
+              [type]="InputTypes.text"
+              formControlName="firstName"
+              [class.valid]="isControlValid('firstName')"
+              [class.invalid]="isControlInvalid('firstName')"
+            />
+            <div class="error">
+              <ng-container *ngIf="isControlInvalid('firstName')">
+                <ng-container
+                  *ngIf="form.controls['firstName']?.hasError('required')"
+                  >{{
+                    "regestration.first-name.error_1" | translate
+                  }}</ng-container
+                >
+                <ng-container
+                  *ngIf="form.controls['firstName']?.hasError('minlength')"
+                  >{{ "regestration.first-name.error_2" | translate }} -
+                  {{
+              form.controls['firstName'].errors?.['minlength']?.requiredLength}}</ng-container
+                >
+              </ng-container>
+            </div>
+          </label>
+          <!-- Last name -->
+          <label>
+            <span>{{ "regestration.last-name.title" | translate }}</span>
+            <input
+              [type]="InputTypes.text"
+              formControlName="lastName"
+              [class.valid]="isControlValid('lastName')"
+              [class.invalid]="isControlInvalid('lastName')"
+            />
+            <div class="error">
+              <ng-container *ngIf="isControlInvalid('lastName')">
+                <ng-container
+                  *ngIf="form.controls['lastName']?.hasError('required')"
+                  >{{
+                    "regestration.last-name.error_1" | translate
+                  }}</ng-container
+                >
+                <ng-container
+                  *ngIf="form.controls['lastName']?.hasError('minlength')"
+                  >{{ "regestration.last-name.error_2" | translate }} -
+                  {{
+              form.controls['lastName'].errors?.['minlength']?.requiredLength}}</ng-container
+                >
+              </ng-container>
+            </div>
+          </label>
+          <!-- Email -->
+          <label>
+            <span>{{ "regestration.email.title" | translate }}</span>
+            <input
+              [type]="InputTypes.email"
+              formControlName="email"
+              [class.valid]="isControlValid('email')"
+              [class.invalid]="isControlInvalid('email')"
+            />
+            <div class="error">
+              <ng-container *ngIf="isControlInvalid('email')">
+                <ng-container
+                  *ngIf="form.controls['email']?.hasError('required')"
+                  >{{ "regestration.email.error_1" | translate }}</ng-container
+                >
+                <ng-container
+                  *ngIf="form.controls['email']?.hasError('email')"
+                  >{{ "regestration.email.error_2" | translate }}</ng-container
+                >
+              </ng-container>
+            </div>
+          </label>
+          <div class="photo">
+            <img src="/assets/icons/bee_form_first.svg" alt="bee" />
+          </div>
+        </div>
+        <div class="footer">
+          <div class="items">
+            <span class="item item-active">1</span>
+            <span class="item">2</span>
+            <span class="item">3</span>
+          </div>
+          <button
+            (click)="regestrationStep = 1"
+            class="button button-colorized"
+            type="button"
+          >
+            <span>{{ "regestration.button.next" | translate }}</span>
+          </button>
+        </div>
+      </ng-container>
+      <!-- Second Step -->
+      <ng-container *ngIf="regestrationStep === 1">
+        <div class="content content-second">
+          <!-- Password -->
+          <label>
+            <span>{{ "regestration.password.title" | translate }}</span>
+            <input
+              [type]="showPassword ? InputTypes.text : InputTypes.password"
+              formControlName="password"
+              [class.valid]="isControlValid('password')"
+              [class.invalid]="isControlInvalid('password')"
+            />
+            <button
+              type="button"
+              class="button button--close button-password"
+              (click)="this.showPassword = !this.showPassword"
+            >
+              <ng-container *ngIf="!this.showPassword; else elseTemplate">
+                <svg class="icon icon-eye-blocked">
+                  <use xlink:href="#icon-eye-blocked"></use>
+                </svg>
+              </ng-container>
+              <ng-template #elseTemplate>
+                <svg class="icon icon-eye">
+                  <use xlink:href="#icon-eye"></use>
+                </svg>
+              </ng-template>
+            </button>
+            <div class="error">
+              <ng-container *ngIf="isControlInvalid('password')">
+                <ng-container
+                  *ngIf="form.controls['password']?.hasError('required')"
+                  >{{
+                    "regestration.password.error_1" | translate
+                  }}</ng-container
+                >
+                <ng-container
+                  *ngIf="form.controls['password']?.hasError('minlength')"
+                  >{{ "regestration.password.error_2" | translate }} -
+                  {{
+                form.controls['password'].errors?.['minlength']?.requiredLength}}</ng-container
+                >
+              </ng-container>
+            </div>
+          </label>
+          <!-- Username -->
+          <label>
+            <span>{{ "regestration.username.title" | translate }}</span>
+            <input
+              [type]="InputTypes.text"
+              formControlName="username"
+              [class.valid]="isControlValid('username')"
+              [class.invalid]="isControlInvalid('username')"
+            />
+            <div class="error">
+              <ng-container *ngIf="isControlInvalid('username')">
+                <ng-container
+                  *ngIf="form.controls['username']?.hasError('required')"
+                  >{{
+                    "regestration.username.error_1" | translate
+                  }}</ng-container
+                >
+                <ng-container
+                  *ngIf="form.controls['username']?.hasError('minlength')"
+                  >{{ "regestration.username.error_2" | translate }} -
+                  {{
+                form.controls['username'].errors?.['minlength']?.requiredLength}}</ng-container
+                >
+              </ng-container>
+            </div>
+          </label>
+          <div class="photo">
+            <img src="/assets/icons/bee_form_second.svg" alt="bee" />
+          </div>
+        </div>
+        <div class="footer">
+          <div class="items">
+            <span class="item">1</span>
+            <span class="item item-active">2</span>
+            <span class="item">3</span>
+          </div>
+          <button
+            (click)="regestrationStep = 2"
+            class="button button-colorized"
+            type="button"
+          >
+            <span>{{ "regestration.button.next" | translate }}</span>
+          </button>
+        </div>
+      </ng-container>
+      <!-- Third Step -->
+      <ng-container *ngIf="regestrationStep === 2">
+        <div class="content content-last">
+          <h3>{{ "regestration.h3" | translate }}</h3>
+          <app-bee-last></app-bee-last>
+          <button
+            class="button button-colorized"
+            [disabled]="form.invalid"
+            type="submit"
+            (click)="loading ? null : submit(); onclick.emit()"
+          >
+            <span>{{ "regestration.button.submit" | translate }}</span>
+          </button>
+        </div>
+        <div class="items">
+          <span class="item">1</span>
+          <span class="item">2</span>
+          <span class="item item-active">3</span>
+        </div>
+      </ng-container>
+    </form>
+  </div>
+</div>

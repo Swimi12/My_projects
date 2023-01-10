@@ -1,0 +1,27 @@
+// Color
+$c-azure: #f4fffe;
+$c-white: #ffffff;
+$c-black: #1d1c0c;
+$c-orange: #ff9500;
+$c-moss-green: #96935d;
+$c-blue: #469f92;
+$c-deep-blue: #383a47;
+$c-silver: #eaeff3;
+$c-gradient-orange: linear-gradient(
+  354.29deg,
+  #ff9500 8.79%,
+  rgba(255, 255, 255, 0) 74.89%
+);
+
+// Font size
+$fs-base: 24;
+
+// Font familly
+$ff-base: "Montserrat", sans-serif;
+$ff-kalam: "Kalam", cursive;
+
+// * Bezier
+$b-normal: cubic-bezier(0.4, 0, 0.2, 1);
+
+// * Transition
+$t-normal: 0.35s $b-normal;

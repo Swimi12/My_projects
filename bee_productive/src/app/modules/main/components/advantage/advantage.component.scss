@@ -1,0 +1,69 @@
+@import "../../../../../styles/variables.scss";
+@import "../../../../../styles/mixins.scss";
+@import "../../../../../styles/media.scss";
+
+section {
+  padding-top: 100px;
+  margin-bottom: 180px;
+  @include media("<=desktop") {
+    margin-bottom: 90px;
+    padding-top: 50px;
+  }
+  @include media("<=phone") {
+    margin-bottom: 50px;
+    padding-top: 50px;
+  }
+}
+
+.advantage-wrapper {
+  display: flex;
+  @include media("<=desktop") {
+    flex-direction: column;
+  }
+}
+
+.block {
+  @include media("<=desktop") {
+    margin-bottom: 40px;
+  }
+  &-phone {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+
+    @include media("<=desktop") {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+h3 {
+  font-weight: 700;
+  font-size: em(48);
+  line-height: 59px;
+  margin-bottom: 65px;
+}
+
+p {
+  white-space: pre-wrap;
+  font-weight: 400;
+  line-height: 34px;
+  margin-bottom: 30px;
+}
+
+.bold {
+  font-weight: 500;
+  font-size: em(32);
+  line-height: 45px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.phone {
+  min-width: 430px;
+  @include media("<=phone") {
+    min-width: 300px;
+  }
+}

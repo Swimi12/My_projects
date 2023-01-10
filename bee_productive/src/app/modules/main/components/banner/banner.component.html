@@ -1,0 +1,23 @@
+<section>
+  <div class="wrapper">
+    <div class="block">
+      <div class="side">
+        <h1>{{ "banner.h1" | translate }}</h1>
+        <p class="text">{{ "banner.text" | translate }}</p>
+        <button class="button button-colorized" type="button">
+          <span>{{ "banner.button" | translate }} </span>
+        </button>
+        <div>
+          <app-banner-content></app-banner-content>
+        </div>
+      </div>
+      <div class="side-adaptation">
+        <div class="bee">
+          <app-banner-bee></app-banner-bee>
+          <p class="text-transform">Become productive like a bee</p>
+        </div>
+      </div>
+    </div>
+    <div class="features"><app-banner-features></app-banner-features></div>
+  </div>
+</section>

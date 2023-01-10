@@ -1,0 +1,12 @@
+@import "../../../../../styles/media.scss";
+
+.bee {
+  width: 450px;
+  height: 435px;
+  @include media("<=tablet") {
+    width: 350px;
+  }
+  @include media("<=phone") {
+    width: 250px;
+  }
+}

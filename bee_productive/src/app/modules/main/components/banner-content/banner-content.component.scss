@@ -1,0 +1,101 @@
+@import "../../../../../styles/variables.scss";
+@import "../../../../../styles/mixins.scss";
+@import "../../../../../styles/media.scss";
+
+.content {
+  display: flex;
+  align-items: center;
+  @include media("<=desktop") {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  @include media("<=phone") {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.photo {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 155px;
+  @include media("<=phone") {
+    margin-bottom: 15px;
+  }
+}
+
+.photo div {
+  width: 60px;
+  height: 60px;
+  &:nth-child(1) {
+    z-index: 9;
+  }
+
+  &:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: calc(50% - 20px);
+    z-index: 8;
+  }
+
+  &:nth-child(3) {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 7;
+  }
+}
+
+.text {
+  margin-right: 30px;
+  @include media("<=phone") {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+p {
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -1px;
+}
+
+.subtext {
+  font-weight: 400;
+  font-size: em(16);
+  line-height: 24px;
+  opacity: 0.6;
+}
+
+.line {
+  height: 40px;
+  width: 2px;
+  background-color: $c-black;
+  margin-right: 25px;
+  @include media("<=phone") {
+    display: none;
+  }
+}
+
+.stars {
+  display: flex;
+  color: $c-blue;
+}
+
+.star {
+  animation: rotate 10000ms infinite linear;
+  color: $c-blue;
+  &-empty {
+    color: $c-moss-green;
+  }
+}
+
+span {
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: em(16);
+  line-height: 24px;
+  color: $c-black;
+  opacity: 0.6;
+}
