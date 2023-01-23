@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Subject } from 'rxjs';
 import { INavigation, NavigationRouteType } from '../types/navigation.types';
 
 @Injectable({
@@ -24,7 +23,4 @@ export class NavigationService {
       route: NavigationRouteType.SHOP,
     },
   ];
-
-  readonly anchorNavigationSubject =
-    new BehaviorSubject<NavigationRouteType | null>(null);
 }

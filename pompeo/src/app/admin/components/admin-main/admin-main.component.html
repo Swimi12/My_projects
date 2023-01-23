@@ -8,40 +8,44 @@
   </header>
   <!-- * Table -->
   <div class="wrapper">
-    <table border="0" cellPadding="0" cellSpacing="0">
+    <table cellPadding="0" cellSpacing="0">
       <!-- * Table head -->
       <thead>
         <tr>
-          <th align="start">ID</th>
+          <th>ID</th>
           <th>Photo</th>
           <th>Name</th>
           <th>Price</th>
           <th>Amount</th>
           <th>DELETE</th>
-          <th align="center">CHANGE</th>
+          <th>CHANGE</th>
         </tr>
       </thead>
       <!-- * Table body -->
       <tbody>
         <tr *ngFor="let item of list">
-          <td align="start">{{ item._id }}</td>
-          <td align="start"><img [src]="item.nameFile" alt="item Photo" /></td>
-          <td align="center">{{ item.name.en }}</td>
-          <td align="center">{{ item.price | currency }}</td>
-          <td align="center">{{ item.amount }}</td>
-          <td align="center">
+          <td>{{ item._id }}</td>
+          <td>
+            <div class="photo">
+              <img [src]="item.nameFile" alt="item Photo" />
+            </div>
+          </td>
+          <td>{{ item.name.en }}</td>
+          <td>{{ item.price | currency }}</td>
+          <td>{{ item.amount }}</td>
+          <td>
             <button
               type="button"
-              class="button button-table"
+              class="button-table"
               (click)="deleteItem(item._id)"
             >
               DELETE
             </button>
           </td>
-          <td align="center">
+          <td>
             <a
               [routerLink]="['/admin/update', item._id]"
-              class="button button-table"
+              class="button-table"
               type="button"
               >CHANGE</a
             >

@@ -35,8 +35,7 @@ const routes: Routes = [
       },
       {
         path: '',
-        loadChildren: () =>
-          import('./main/main.module').then((m) => m.MainModule),
+        loadChildren: () => import('./main/main.module'),
       },
       { path: '**', redirectTo: '404', pathMatch: 'full' },
     ],

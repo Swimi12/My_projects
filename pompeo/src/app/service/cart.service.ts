@@ -7,8 +7,6 @@ import { IItems } from '../types/item.types';
 export class CartService {
   list: IItems[] = [];
 
-  constructor() {}
-
   addToCart(product: IItems) {
     this.list.push({ ...product, count: 1 });
   }

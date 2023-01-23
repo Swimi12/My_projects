@@ -16,4 +16,4 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule,
   ],
 })
-export class BaseModule {}
+export default class BaseModule {}

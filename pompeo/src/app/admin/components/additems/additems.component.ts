@@ -4,7 +4,6 @@ import {
   FormGroup,
   ReactiveFormsModule,
   Validators,
-  ValidationErrors,
 } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
@@ -35,7 +34,6 @@ export default class AdditemsComponent {
 
   constructor(
     private readonly fb: FormBuilder,
-    private readonly translateService: TranslateService,
     private readonly addItems: AdditemService,
     private readonly router: Router
   ) {
@@ -56,8 +54,6 @@ export default class AdditemsComponent {
     formData.append('file', this.formFile.get('profile')!.value);
     this.addItems.onSubmit(formData).subscribe({
       next: (response) => {
-        console.log('response: ', response);
-        console.log('response: ', typeof response);
         this.form.get('nameFile')?.setValue(response.data.name);
         this.submit();
       },

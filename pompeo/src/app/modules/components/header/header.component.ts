@@ -60,8 +60,6 @@ export class HeaderComponent implements OnDestroy, AfterContentChecked {
   }
 
   private resize() {
-    console.log('this.isMobileMode: ', this.isMobileMode);
-    console.log('this.isShowNavigation: ', this.isShowNavigation);
     if (typeof window !== 'undefined') {
       this.isMobileMode = window.innerWidth < 1024;
       if (!this.isMobileMode) {

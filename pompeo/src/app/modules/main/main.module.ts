@@ -27,4 +27,4 @@ import { SharedModule } from 'src/app/shared/shared.module';
     SharedModule,
   ],
 })
-export class MainModule {}
+export default class MainModule {}

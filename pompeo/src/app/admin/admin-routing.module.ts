@@ -16,7 +16,7 @@ const routes: Routes = [
         path: 'update/:id',
         loadComponent: () =>
           import('./components/update-item/update-item.component'),
-        children: [{ path: 'products/:id', component: UpdateItemComponent }],
+        children: [{ path: 'update/:id', component: UpdateItemComponent }],
       },
       {
         path: '',

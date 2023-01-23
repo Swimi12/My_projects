@@ -102,7 +102,7 @@ export class LatetsNewsComponent {
       message,
       this.translateService.instant('snack-bar.action'),
       {
-        // duration: 2000,
+        duration: 2000,
         panelClass: ['blue-snackbar'],
       }
     );
